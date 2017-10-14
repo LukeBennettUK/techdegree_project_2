@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto:300', sans-serif;
+}
+
+h1 {
+  padding-top: 21.44px;
+  margin-top: 0;
+  font-family: 'Roboto: 900', sans-serif; 
+  text-align: center
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+/************************************************************
+HEADER
+*************************************************************/
+
+/* ---- Navigation ---- */
+
+header {
+  background-color: #FAFAFA;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.main-nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.main-nav li {
+  text-align: center;
+}
+
+
+/************************************************************
+MAIN CONTENT
+*************************************************************/

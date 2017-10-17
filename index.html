@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
 </head>
 <body>
   
@@ -17,20 +17,20 @@
     <nav>
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <img src="images/responsive-layout-profile.png" alt="Profile-Image"/>
+    <img src="images/responsive-layout-profile.png" alt="Profile-Image" class="profile-image"/>
 
-    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    <p class="personal-statement">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
   
   </header>
   
   <main>
     
-    <h2 class="portfolio-title">Portfolio</h2>
+    <h2 class="portfolio-title"><a name="portfolio">Portfolio</a></h2>
     
     <img src="images/portfolio-1.png" alt="Marketing-Page-Project-Image" />
     <h3>Marketing Page</h3>
@@ -60,9 +60,20 @@
   
   <footer>
   
-    <h2>Contact</h2>
+    <h2 class="contact"><a name="contact">Contact</a></h2>
     
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+    
+    <ul class="contact-info">
+      Phone
+      <li class="phone"><a href="tel:+1(111)555-1234">+1(111)555-1234</a></li>
+      <br/>
+      Email
+      <li class="mail"><a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
+    </ul>
+    
+    <p class="student-name">Student Name</p>
+    <p class="back-to-top"><a href="#">Back To Top</a></p>
     
   </footer>
   

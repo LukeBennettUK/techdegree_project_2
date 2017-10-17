@@ -83,7 +83,7 @@ MAIN CONTENT
 /* -- Main Wrapper -- */
 
 main {
-  margin: 0 5%
+  margin: 0 -24px;
 }
 
 
@@ -101,7 +101,7 @@ main img {
 
 /* -- All paragraphs within main wrapper -- */
 
-main p {
+main figcaption {
   margin-bottom: 40px;
 }
 
@@ -190,27 +190,64 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
   
   /* ----------- HEADER --------------- */
   
+  header {
+    padding: 0 3%;
+  }
+  
   /* -- Navigation Menu -- */
   
   .main-nav li,
   .main-nav li a {
     display: inline;
     background-color: #FAFAFA;
+    font-size: 0.95em;
     padding: 10px;
   }
   
   /* -- Profile Image -- */
 
-  .profile-image,
+  .profile-image {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 60px;
+  }
+  
+  /* -- Intro/personal statement -- */
+  
   .personal-statement {
-    display: inline;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2em;
+    width: 59%;
+    float: left;
+    margin-top: 45px;
+    margin-right: 5px;
   }
 
-  /* -- Intro/personal statement -- */
+  /* ----------- MAIN CONTENT --------------- */
+  
+  main {
+    margin: 0 5%
+  }
+  
+  main img,
+  main p {
+    display: inline-block;
+    width: 50%;
+  }
 
- 
+  
+  
+  
+/*
+   -- Clearfix -- 
+
+  .clearfix::after {
+    content="";
+    display: table;
+    clear: both;
+  }
+*/
   
   
 }
-  
-  

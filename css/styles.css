@@ -322,24 +322,102 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
 
 @media screen and (min-width: 1024px) {
   
- h1 {
-    float: left;
+  /* ------------------------- HEADER ----------------------------- */
+
+  header {
+    padding: 0 5% 50px;
+  }
+
+  h1,
+  .main-nav li {
+    display: inline-block;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  h1 {
     font-size: 1.3em;
     padding: 45px 45px 45px 0px;
+    float: left;
     margin: 0;
   }
 
   .main-nav {
     float: right;
     font-size: 0.9em;
-    padding: 50px 0px 45px 45px;
-    margin: 0px;
+    padding: 42px 0px 37px 37px;
+  }
+
+  .main-nav li a {
+    padding-right: 0;
+  }
+  
+  .profile-image {
+    float: right;
+    clear: both;
+    margin: 0;
+    width: 35%;
+  }
+
+  .personal-statement {
+    margin: 0;
+  }
+
+  /* ---------------------------------- MAIN CONTENT ------------------------ */
+
+  .portfolio-title {
+    font-size: 0.9em;
+  }
+  
+  main figure {
+    display: inline-block;
+    width: 30%;
+    margin: 8px;
+    vertical-align: top;
+  }
+  
+  main figcaption {
+    font-size: 1em;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+
+/* ---------------------------------- FOOTER ------------------------ */
+
+  footer {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 55px;
+  }
+
+  .contact {
+    font-size: 1em;
+  }
+
+  .contact-p {
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+
+  /* -- Bottom of footer -- */
+  
+  .student-name {
+    font-size: 0.9em;
+  }
+  
+  .footer-nav a {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-left: 25px;
   }
 
   /* -- Clearfix -- */
 
   .clearfix:after {
-    content= "";
+    content: "";
     display: table;
     clear: both;
   }

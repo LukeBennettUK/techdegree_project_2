@@ -298,6 +298,8 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     display: none;
   }
   
+  /* ---- FOOTER NAVIGATION UNHIDE AND STYLING ---- */
+  
   .footer-nav {
     display: block;
     float: right;
@@ -316,18 +318,29 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     padding-left: 25px;
   }
   
+}
+
+@media screen and (min-width: 1024px) {
   
-  
-  
-/*
-   -- Clearfix -- 
+ h1 {
+    float: left;
+    font-size: 1.3em;
+    padding: 45px 45px 45px 0px;
+    margin: 0;
+  }
+
+  .main-nav {
+    float: right;
+    font-size: 0.9em;
+    padding: 45px 0px 45px 45px;
+    margin: 0px;
+  }
+
+  /* -- Clearfix -- */
 
   .clearfix::after {
     content="";
     display: table;
     clear: both;
   }
-*/
-  
-  
 }

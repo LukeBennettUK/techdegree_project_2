@@ -116,6 +116,33 @@ main figcaption {
 
 
 /************************************************************
+SKILLS SECTION
+*************************************************************/
+
+.circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border: 15px solid black;
+}
+
+figure {
+  background-color: red;
+  padding: 5px;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+figcaption {
+  background-color: orange;
+  width: 75%;
+  border-radius: 30px;
+}
+
+
+/************************************************************
 FOOTER
 *************************************************************/
 
@@ -145,22 +172,16 @@ footer p {
 
 .contact-info a {
   color: #74828b;
-  font-weight: 400;
   letter-spacing: 0.5px;
 }
 
 /* -- Contact list styling -- */
 
 .contact-info li {
-  display: inline-block;
-  margin-left: 7px;
-}
-
-/* -- Contact Phone and Email seperation -- */
-
-.phone {
   margin-bottom: 15px;
 }
+
+
 
 /* -------------------- BOTTOM OF FOOTER ----------------- */
 

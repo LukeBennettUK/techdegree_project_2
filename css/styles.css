@@ -119,27 +119,30 @@ main figcaption {
 SKILLS SECTION
 *************************************************************/
 
-.circle {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  border: 15px solid black;
+aside {
+  margin: 50px 5%;
 }
 
-figure {
-  background-color: red;
-  padding: 5px;
-  border-radius: 30px;
-  width: 50%;
+.skill-points {
+  margin: 50px 0;
+}
+
+.point-container {
+  background-color: #f2f2f2;
+  width: 85%;
+  height: 20px;
   margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-figcaption {
-  background-color: orange;
-  width: 75%;
-  border-radius: 30px;
+.points {
+  background-color: #FED36E;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
 }
+
 
 
 /************************************************************

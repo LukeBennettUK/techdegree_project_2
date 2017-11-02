@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #515b61;
+  color: #4f4f4f;
   line-height: 1.5;
   text-align: center;
 }
@@ -36,7 +36,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #515b61;
+  color: #4f4f4f;
 }
 
 figure {
@@ -120,7 +120,16 @@ SKILLS SECTION
 *************************************************************/
 
 aside {
-  margin: 50px 5%;
+  background-color: #5abbd8;
+  padding: 50px 0px;
+}
+
+.wrapper {
+  margin: 0px 5%;
+}
+
+.skills-title {
+  margin-bottom: 50px;
 }
 
 .skill-points {
@@ -132,15 +141,44 @@ aside {
   width: 85%;
   height: 20px;
   margin: auto;
-  margin-bottom: 20px;
+  margin: 25px;
   border-radius: 10px;
+  
 }
 
 .points {
   background-color: #FED36E;
-  width: 70%;
   height: 20px;
   border-radius: 10px;
+  position: relative;
+}
+
+.html {
+  width: 80%;
+}
+
+.css {
+  width: 60%;
+}
+
+.js {
+  width: 30%;
+}
+
+.skill-level-indicator {
+  width: 45px;
+  position: absolute;
+  right: -10px;
+  top: -23px
+}
+
+.skill-percent {
+  position: absolute;
+  color: #FAFAFA;
+  top: -34px;
+  right: 0px;
+  font-weight: 400;
+  font-size: 0.75em;
 }
 
 

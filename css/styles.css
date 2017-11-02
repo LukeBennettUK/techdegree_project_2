@@ -89,6 +89,7 @@ MAIN CONTENT
 
 main {
   margin: 0 5%;
+  margin-bottom: 80px
 }
 
 
@@ -122,6 +123,8 @@ SKILLS SECTION
 aside {
   background-color: #5abbd8;
   padding: 50px 0px;
+  margin-bottom: 80px;
+  color: white;
 }
 
 .wrapper {
@@ -132,18 +135,20 @@ aside {
   margin-bottom: 50px;
 }
 
+.skills-title a {
+  color: white;
+}
+
 .skill-points {
   margin: 50px 0;
 }
 
 .point-container {
   background-color: #f2f2f2;
-  width: 85%;
+  width: 100%;
   height: 20px;
-  margin: auto;
   margin: 25px;
   border-radius: 10px;
-  
 }
 
 .points {
@@ -154,7 +159,7 @@ aside {
 }
 
 .html {
-  width: 80%;
+  width: 70%;
 }
 
 .css {
@@ -199,6 +204,7 @@ footer {
 
 footer p {
   margin-bottom: 30px;
+  font-family: 'Slabo', sans-serif;
 }
 
 /* ------------------ CONTACT SECTION ----------------- */
@@ -212,7 +218,7 @@ footer p {
 /* -- Contact anchor styling -- */
 
 .contact-info a {
-  color: #74828b;
+  color: #4f4f4f;
   letter-spacing: 0.5px;
 }
 
@@ -313,7 +319,8 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
   /* ----------- MAIN CONTENT --------------- */
   
   main {
-    margin: 0 ;
+    margin: 0;
+    margin-bottom: 40px;
   }
   
   .portfolio-title {
@@ -458,6 +465,31 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     margin-bottom: 45px;
   }
 
+  
+  
+    /* ---------------------------------- SKILLS ----------------- */
+  
+  .skill-info {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 11px;
+  }
+  
+  .skill-points {
+    display: inline-block;
+    width: 69.58%; 
+    vertical-align: top;
+    margin: -30px 0 0 0;
+  }
+  
+  .skill-points p {
+    text-align: left;
+    padding-left: 8%
+  }
+  
+  
 
 /* ---------------------------------- FOOTER ------------------------ */
 

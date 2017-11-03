@@ -4,6 +4,7 @@ body {
   color: #4f4f4f;
   line-height: 1.5;
   text-align: center;
+  background-color: #EDEDED;
 }
 
 h1 {
@@ -37,6 +38,7 @@ ul {
 a {
   text-decoration: none;
   color: #4f4f4f;
+  transition: all 0.3s;
 }
 
 figure {
@@ -51,16 +53,17 @@ HEADER
 /* ---- Navigation ---- */
 
 header {
-  background-color: #FAFAFA;
+  background-color: #8c8c8c;
   padding: 0 5%;
   margin-bottom: 50px;
+  color: #FAFAFA;
 }
 
 .main-nav li a {
   display: block;
   padding: 15px;
   margin-bottom: 7px;
-  background-color: white;
+  background-color: #EDEDED;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -77,6 +80,14 @@ header {
 
 .personal-statement {
   padding-bottom: 40px;
+}
+
+/* Nav Hover states */
+
+.main-nav li,
+.main-nav a:hover {
+  background-color: #999999;
+  color: #FAFAFA;
 }
 
 
@@ -120,12 +131,16 @@ main figcaption {
 SKILLS SECTION
 *************************************************************/
 
+/* Aside Element Styling */
+
 aside {
   background-color: #5abbd8;
   padding: 50px 0px;
   margin-bottom: 80px;
   color: white;
 }
+
+/* Div to control Both the Paragraph and Skill Bars as one - Margins and colors */
 
 .wrapper {
   margin: 0px 5%;
@@ -143,32 +158,45 @@ aside {
   margin: 50px 0;
 }
 
+/* White box containing yellow skill level bar */
+
 .point-container {
   background-color: #f2f2f2;
-  width: 100%;
   height: 20px;
-  margin: 25px;
+  margin: 25px 0;
   border-radius: 10px;
 }
 
-.points {
+/* Yellow Bar */
+
+.point-bar {
   background-color: #FED36E;
   height: 20px;
   border-radius: 10px;
   position: relative;
 }
 
+/* Point Bar skills Percentages */
+
+/* HTML */
+
 .html {
   width: 70%;
 }
+
+/* CSS */
 
 .css {
   width: 60%;
 }
 
+/* JavaScript */
+
 .js {
   width: 30%;
 }
+
+/* Skill Level inidcator - Black box */
 
 .skill-level-indicator {
   width: 45px;
@@ -176,6 +204,8 @@ aside {
   right: -10px;
   top: -23px
 }
+
+/* Skill Level inidcator - percentage within black box e.g. 70% */
 
 .skill-percent {
   position: absolute;
@@ -196,15 +226,25 @@ FOOTER
 /* -- Footer Wrapper -- */
 
 footer {
-  background-color: #FAFAFA;
+  background-color: #8c8c8c;
+  color: #FAFAFA;
   padding: 50px 5% 70px; 
+}
+
+footer a {
+  color: #FAFAFA;
+}
+
+footer a:hover {
+  color: #4f4f4f;
 }
 
 /* -- Footer Paragraph -- */
 
-footer p {
+.contact-p {
   margin-bottom: 30px;
-  font-family: 'Slabo', sans-serif;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 1.15em;
 }
 
 /* ------------------ CONTACT SECTION ----------------- */
@@ -218,7 +258,6 @@ footer p {
 /* -- Contact anchor styling -- */
 
 .contact-info a {
-  color: #4f4f4f;
   letter-spacing: 0.5px;
 }
 
@@ -290,11 +329,13 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
   .main-nav li,
   .main-nav li a {
     display: inline;
+  }
+  
+  .main-nav li a {
     background-color: #FAFAFA;
     font-size: 0.95em;
-    padding: 8px;
-    padding-right: 15px;
-  }
+    padding: 8px 16px;
+    }
   
   /* -- Profile Image -- */
 
@@ -323,10 +364,14 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     margin-bottom: 40px;
   }
   
+  /* Title for portfolio */
+  
   .portfolio-title {
     font-size: 0.9em;
     margin-bottom: 46px;
   }
+  
+  /* main content images */
   
   main figure {
     display: inline-block;
@@ -335,12 +380,23 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     vertical-align: top;
   }
   
+  /* paragraph under main images */
+  
   main figcaption {
     font-size: 0.85em;
     margin-right: 8%;
     margin-left: 8%;
   }
 
+  /* ------------- SKILLS --------------- */
+  
+  /* Tighter margins for the paragraphs within the skills section */
+  
+  .skill-info p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
   /* ----------- FOOTER --------------- */
   
   footer {
@@ -349,15 +405,21 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     padding-left: 3.5%;
   }
   
+  /* contact title */
+  
   .contact {
     font-size: 0.85em;
   }
+  
+  /* contact paragraph styling */
   
   .contact-p {
     margin-left: 15%;
     margin-right: 15%;
     font-size: 1.2em;
   }
+  
+  /* larger font size for phone and email address */
   
   .contact-info {
     font-size: 1.2em;
@@ -378,6 +440,8 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
   }
   
   /* -- FOOTER NAVIGATION UNHIDE AND STYLING -- */
+  
+  /* Right float so footer menu stays to the right */
   
   .footer-nav {
     display: block;
@@ -429,10 +493,6 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     font-size: 0.9em;
     padding: 42px 0px 37px 37px;
   }
-
-  .main-nav li a {
-    padding-right: 0;
-  }
   
   .profile-image {
     float: right;
@@ -467,26 +527,39 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
 
   
   
-    /* ---------------------------------- SKILLS ----------------- */
+  /* ---------------------------------- SKILLS ----------------- */
+  
+  /* Styling to allow paragraph sit on the left */
   
   .skill-info {
     display: inline-block;
-    width: 30%;
+    width: 40%;
     text-align: left;
     vertical-align: top;
     margin-top: 11px;
+    margin-right: 20px
   }
+  
+  /* Removal of smaller margins intended for between 768px and 1024px */
+  
+  .skill-info p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* New width and display type to make .skill-info paragraph and skill bar sit side by side */
   
   .skill-points {
     display: inline-block;
-    width: 69.58%; 
+    width: 57%; 
     vertical-align: top;
     margin: -30px 0 0 0;
   }
   
+  /* left text-align for skill bar headings e.g. HTML, CSS, JavaScript */
+  
   .skill-points p {
     text-align: left;
-    padding-left: 8%
   }
   
   
@@ -499,10 +572,14 @@ RESPONSIVE: SCREEN SIZE AND MEDIA QUERIES
     padding-bottom: 55px;
   }
 
+  /* Contact section heading font-size change to match mockup */
+  
   .contact {
     font-size: 1em;
   }
 
+  /* Tighter margins for larger screen */
+  
   .contact-p {
     margin-left: 24%;
     margin-right: 24%;

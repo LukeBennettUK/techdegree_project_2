@@ -136,7 +136,7 @@ SKILLS SECTION
 aside {
   background-color: #5abbd8;
   padding: 50px 0px;
-  margin-bottom: 80px;
+/*  margin-bottom: 80px;*/
   color: white;
 }
 
@@ -235,7 +235,9 @@ footer a {
   color: #FAFAFA;
 }
 
-footer a:hover {
+.contact-info a:hover,
+.footer-nav a:hover,
+.back-to-top a:hover {
   color: #4f4f4f;
 }
 
